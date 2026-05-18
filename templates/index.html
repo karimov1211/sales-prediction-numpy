@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sotuvlarni Bashorat Qilish</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="background-gradient"></div>
+    <div class="container">
+        <header>
+            <h1>Sotuvlar Bashorati <span>AI</span></h1>
+            <p>O'tgan 12 oylik ma'lumotlar asosida keyingi oyni yuqori aniqlikda bashorat qiling.</p>
+        </header>
+
+        <main class="glass-panel">
+            <div class="input-section">
+                <h2>Oylik savdo ma'lumotlari</h2>
+                <p class="subtitle">Har bir oy uchun savdo hajmini kiriting (yoki standart ma'lumotlarda sinab ko'ring):</p>
+                <form id="salesForm">
+                    <div class="grid-inputs" id="inputsGrid">
+                        <!-- JS will populate 12 inputs here -->
+                    </div>
+                    <button type="submit" class="btn-primary">Bashoratni Hisoblash <span class="arrow">→</span></button>
+                </form>
+            </div>
+
+            <div class="result-section" id="resultSection" style="display: none;">
+                <div class="prediction-card">
+                    <h3>13-Oy Uchun Prognoz qilingan Savdo Hajmi</h3>
+                    <div class="prediction-value" id="predictionValue">0</div>
+                    <p class="equation" id="equationText">y = 0x + 0</p>
+                </div>
+                <div class="chart-container">
+                    <canvas id="salesChart"></canvas>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
